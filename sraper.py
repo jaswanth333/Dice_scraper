@@ -67,7 +67,7 @@ for pages in range(0, int(params['page'])):
             else:
                 job_types = contract_type.append('None')
 
-        if 'Accepts corp to corp applications' in str:
+        if 'Accepts corp to corp applications' in job_types:
             values['contract_type'] = 'C2C'
             results.append(values)
         else:
