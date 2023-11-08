@@ -10,7 +10,7 @@ params = {
     'locationPrecision': 'Country',
     'countryCode2': 'US',
     'page': 1,
-    'pageSize': 50,
+    'pageSize': 100,
     'facets': 'employmentType|postedDate|workFromHomeAvailability|employerType|easyApply|isRemote',
     'filters.employmentType': 'CONTRACTS',
     'filters.postedDate': 'ONE',
@@ -74,4 +74,4 @@ for pages in range(0, int(params['page'])):
             pass
 
 df = pd.DataFrame(results)
-df.to_csv('C2C_results.csv', index=False)
+df.to_csv('results.csv', index=False)
